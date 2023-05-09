@@ -5,10 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
+
+    <CheckBox
+        android:id="@+id/checkBoxIdh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IDH" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPopulacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="População" />
+
+    <CheckBox
+        android:id="@+id/checkBoxArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Área" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMunicipios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Municípios" />
 
     <RadioGroup
+        android:id="@+id/radioGroupEstados"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PR" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SC" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RS" />
+
+    </RadioGroup>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="233dp" />
 
 </LinearLayout>
